@@ -1,10 +1,8 @@
 .DS_Store
 .env
-.nycrc.json
 .npmrc
 
 /lib/
-/ci/
 /playground/
 /coverage/
 /test/__fixtures__/.temp/
