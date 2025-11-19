@@ -1,4 +1,4 @@
-name: '🔬 CI — Compatibility'
+name: '🔬 CI — Deno'
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
       fail-fast: false
       matrix:
         deno-version: ['v1.x', 'v2.x', 'canary']
-    name: Deno ${{ matrix.deno-version }}
+    name: ${{ matrix.deno-version }}
     steps:
       - name: ➕ Actions - Checkout
         uses: actions/checkout@v4
