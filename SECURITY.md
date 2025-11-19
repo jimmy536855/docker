@@ -8,7 +8,7 @@
 
 ### Why does Poku use `child_process`?
 
-**@pokujs/docker** starts a background process for each container initialized and handles its starting and ending.
+[**@pokujs/docker**](https://github.com/pokujs/docker) starts a background process for each container initialized and handles its starting and ending.
 
 ---
 
