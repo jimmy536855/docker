@@ -2,7 +2,7 @@
 
 ## Is Poku Safe?
 
-**Poku** is an open-source project, so you can see both the [Source Code on **GitHub** Repository](https://github.com/wellwelwel/poku-docker) and the [Distribution Code on **NPM**](https://www.npmjs.com/package/poku?activeTab=code).
+**Poku** is an open-source project, so you can see both the [Source Code on **GitHub** Repository](https://github.com/wellwelwel/poku-docker) and the [Distribution Code on **NPM**](https://www.npmjs.com/package/@pokujs/docker?activeTab=code).
 
 ---
 
