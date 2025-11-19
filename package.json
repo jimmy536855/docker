@@ -29,7 +29,7 @@
   "scripts": {
     "test": "poku",
     "test:bun": "bun poku",
-    "test:deno": "deno run -A poku:canary --denoAllow=all",
+    "test:deno": "deno run -A npm:poku@canary --denoAllow=all",
     "test:coverage": "c8 --experimental-monocart npm test",
     "build": "tsc",
     "lint": "biome lint --error-on-warnings && prettier --check .",
