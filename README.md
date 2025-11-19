@@ -21,9 +21,40 @@ Enjoying **Poku**? [Give him a star to show your support](https://github.com/wel
 
 ---
 
-## Using it independently
+## Quickstart
 
-### compose
+### Install
+
+<table>
+<tr>
+<td width="225">
+
+```bash
+# Node.js
+npm i -D @pokujs/docker
+```
+
+</td>
+<td width="225">
+
+```bash
+# Bun
+bun add -d @pokujs/docker
+```
+
+</td>
+<td width="225">
+
+```bash
+# Deno (optional)
+deno add npm:@pokujs/docker
+```
+
+</td>
+</tr>
+</table>
+
+### Docker Compose
 
 ```js
 import { docker } from '@pokujs/docker';
@@ -41,7 +72,7 @@ await compose.up();
 await compose.down();
 ```
 
-### dockerfile
+### Dockerfile
 
 ```js
 import { docker } from '@pokujs/docker';
