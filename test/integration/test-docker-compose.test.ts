@@ -1,16 +1,9 @@
 import { execSync } from 'node:child_process';
-import { env } from 'node:process';
 import { assert, describe, it, kill, skip, waitForPort } from 'poku';
 import { isWindows } from '../__utils__/os.js';
 import { docker } from '../../src/index.js';
 
-if (isWindows) {
-  skip('External error: no matching manifest for windows/amd64');
-}
-
-if (env.GITHUB_ACTIONS) {
-  skip();
-}
+if (isWindows) skip('External error: no matching manifest for windows/amd64');
 
 const hasDockerCompose = (() => {
   try {
