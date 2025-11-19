@@ -1,16 +1,16 @@
 {
   "name": "@pokujs/docker",
   "version": "0.1.0",
-  "description": "🐷 Poku makes testing easy for Node.js, Bun, Deno, and you at the same time.",
+  "description": "🐳 A minimal API to assist tests that require containers or tests that run inside containers.",
   "main": "./lib/index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wellwelwel/poku.git"
+    "url": "git+https://github.com/wellwelwel/poku-docker.git"
   },
   "homepage": "https://poku.io",
   "bugs": {
-    "url": "https://github.com/wellwelwel/poku/issues"
+    "url": "https://github.com/wellwelwel/poku-docker/issues"
   },
   "author": "https://github.com/wellwelwel",
   "funding": {
